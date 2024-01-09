@@ -73,13 +73,14 @@
 
         .hero {
             position: relative;
-            background: url('IMG_8813-1024x683.jpg') center/cover;
+            background: url('bg.jpg') center/cover;
             height: 300px;
             color: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            ;
         }
 
         .hero .text-container {
@@ -159,7 +160,7 @@
         }
 
         .read-more-tours {
-            max-height: 4.5em;
+            max-height: 8.5em;
             overflow: hidden;
             
         }
@@ -245,6 +246,10 @@
             color: #cbd5e0; /* Adjust color as needed */
         }
 
+        .custom-container span{
+            display: table;
+    margin: 0 auto;
+        }
         .custom-container-input input {
             width: 100%;
             font-size: 0.875rem; /* 14px */
@@ -252,6 +257,11 @@
             border: none;
             outline: none;
             background: none;
+
+
+        }
+        .custom-container-input img{
+            border-radius: 50%;
         }
         @media screen and (max-width: 768px) {
             header {
@@ -324,6 +334,10 @@
             .custom-container {
                 margin:  10px;
             }
+            .custom-container span{
+            display: block;
+            margin: 0;
+        }
         }
     </style>
 </head>
@@ -389,7 +403,7 @@
     </div>
 
     <div class="custom-container custom-container-input">
-        <img src="ps.png" height="40px"  width="40px" alt="Search Logo" />
+        <img src="ab.png" height="40px"  width="40px" alt="Search Logo" />
         <input placeholder="Search for campaign, id, name, type" type="text" />
         <i class="fas fa-search text-gray-400"></i>
     </div>
